@@ -2,6 +2,13 @@
 
 Example repo of using pyinstaller to create a desktop app.
 
+To create a new release, use this git command:
+
+```
+git tag v0.0.1 master
+git push origin v0.0.1
+```
+
 ## Cut out
 
 I've cut the pypi_release section from the github action:
