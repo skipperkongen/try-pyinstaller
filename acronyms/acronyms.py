@@ -7,6 +7,7 @@ import requests
 def main():
 
     root = Tk()
+    root.title("80s acronym")
     resp = requests.get('http://textfiles.com/humor/acronym.txt')
     acronyms = resp.text.splitlines()[5:]
     label_text = random.choice(resp.text.splitlines()[5:])
