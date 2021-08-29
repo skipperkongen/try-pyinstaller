@@ -1,17 +1,37 @@
 # Using PyInstaller with Github Actions
 
-Example repo of using pyinstaller to create a desktop app.
+This repo shows you how to use pyinstaller to build and release a Python desktop app.
+The build script is based on the [Clipster Desktop](https://github.com/mc51/Clipster-Desktop)
+project on Github.
+
+You can use this project as a template for your own desktop app.
+
+## About this desktop app
+
+I have created a minimal example of a desktop app. The app uses tkinter and requests to
+display a random acronym from the 80's.
+
+## How to use it
+
+These are the steps to use this project as the basis for your own desktop app.
+
+1. Replace the code in `cli.py` and `acronyms` folder with your own
+1. Replace the icons in `resources` with your own
+1. Edit `.github/workflows/build.yml` and change the name "acronyms" to the name of your app
+
 
 To create a new release, use this git command:
 
 ```
-git tag v0.0.1 master
+git tag v0.0.1 master  # pick a version that has not been used
 git push origin v0.0.1
 ```
 
 ## Cut out
 
-I've cut the pypi_release section from the github action:
+I've cut the pypi_release section from the original github action yml, because
+I don't feel the need to release the desk top app on PyPi. However, this is
+the section I cut out:
 
 ```
 pypi_release:
