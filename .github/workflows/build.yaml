@@ -38,7 +38,7 @@ jobs:
         include:
           - os: macos-latest
             TARGET: macos
-            CMD_BUILD: pyinstaller -F -w -n acronyms -i resources/acronyms.png cli.py && cd dist/ && zip -r9 acronyms acronyms.app/
+            CMD_BUILD: pyinstaller -F -w -n acronyms -i resources/acronyms.icns cli.py && cd dist/ && zip -r9 acronyms Acronyms.app/
             OUT_FILE_NAME: acronyms.zip
             ASSET_MIME: application/zip
           - os: windows-latest
