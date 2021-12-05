@@ -29,10 +29,14 @@ git push origin v0.0.1
 
 ## Creating icon files
 
-Your icon file (.png) should by 512x512 pixels.
+Your original icon file (.png) should by 512x512 pixels. Use whatever design you
+want. From this you will create two icon-files, for Windows and Mac OS respectively:
+- application.ico (256x256) (Windows)
+- application.icns (?x?) (Mac Os)
 
 You can use the online tool [cloudconvert.com](https://cloudconvert.com/png-to-icns)
-to create a .icns file from a .png file.
+to create a both .ico and .icns file from your .png file. If you get an error,
+try to first convert the size of your input image to dimensions 512x512.
 
 ## Cut out
 
