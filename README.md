@@ -27,6 +27,13 @@ git tag v0.0.1 master  # pick a version that has not been used
 git push origin v0.0.1
 ```
 
+## Creating icon files
+
+Your icon file (.png) should by 512x512 pixels.
+
+You can use the online tool [cloudconvert.com](https://cloudconvert.com/png-to-icns)
+to create a .icns file from a .png file.
+
 ## Cut out
 
 I've cut the pypi_release section from the original github action yml, because
